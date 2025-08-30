@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Roboto', sans-serif;
+}
+
+/* start - reused some of the setup codes (fonts, container and navbar) from my P2 company project */
+
+html {
+    --light-green: #B8CABA;
+    --dark-blue: #2B3440;
+    --secondary-blue: #5077A0;
+    --secondary-green: #50A079;
+    --stronger-green: #48906c;
+    --stronger-blue: #486b90;
+    --border-grey: #ccc;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 70rem;
+}
+
+.project-sec-container {
+    max-width: 70rem;
+}
+
+
+header {
+    background-color: var(--light-green);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo-image {
+    max-width: 12.5rem;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-green);
+    border-radius: 0.5rem;
+}
+
+
+@media (max-width:37.5rem) {
+    nav {
+        flex-direction: column;
+    } 
+
+    .header-container {
+        flex-direction: column;
+    }
+  }
+
+.nav-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: #647b5d;
+    color: white;
+}
+
+/* end of reused setup codes from my P2 project */
+
+.logo-link {
+  border-radius: 0.25rem; 
+}
+
+.logo-link:hover {
+  transform: scale(1.1); 
+}
+
+.logo-link:focus {
+  outline: 2px solid black; 
+  transform: scale(1.1);
+}
+
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #647b5d;
+}     
+
+.btn-link:focus {
+  background-color: #647b5d;
+  outline: 2px solid black; 
+}
+
+.btn-sm {
+    font-size: 0.8rem;
+}
+
+.btn span{
+    font-size: 0.8rem;
+}
+
+
+
+footer {
+    display: grid;
+    gap: 3rem;
+    background-color: black;
+    margin-top: 10rem;
+}
+
+
+.footer-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    background-color: var(--primary-teal);
+    color: #fff;
+    background-color: black;
+    padding: 2rem;
+}
+
+.footer-contact h2 {
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-contact p {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+.social-link {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-green); 
+    text-decoration: none; 
+}
+
+
+/* Fix for svg icon and span not on same line, credit to @kukkuz: https://stackoverflow.com/questions/46503436/svg-inside-span-isnt-on-the-same-line-as-the-text */
+.social-link svg, .social-link span {
+    vertical-align: bottom;
+}
+
+.social-link span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social-link:hover svg,
+.social-link:focus svg,
+.social-link:hover span,
+.social-link:focus span {
+    color: white;
+}
+
+
+
+.social-ct{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.animate-sec{
+    grid-column: 3/4;
+    border-radius: 2rem;
+}
+
+
+.cloud-ct {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-green);
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+
+.building {
+    position: absolute;
+    background: #000000; 
+    bottom: 0; 
+    width: 1.56rem; 
+    border-top-left-radius: 0.1rem;
+    border-top-right-radius: 0.1rem;
+
+    
+  }
+  
+ 
+  .building1 {
+    height: 4.3rem;
+    left: 39%;
+  }
+  
+  .building2 {
+    height: 6.8rem;
+    left: 44%;
+  }
+  
+  .building3 {
+    height: 8.75rem;
+    left: 50%;
+  }
+
+  .roof {
+    height: 11.25rem;
+    width: 0.625rem;
+    left: 51.8%;
+  }
+
+
+  .building4 {
+    height: 5rem;
+    left: 56%;
+  }
+  
+  .cloud1 {
+    position: absolute;
+    width: 7.5rem;
+    height: 1.8rem;
+    background: #000000;
+    border-radius: 6.25rem;
+    top: 3.125rem;
+    left: 3.125rem;
+    animation: move-cloud1 10s linear infinite;
+  }
+
+  .cloud2 {
+    position: absolute;
+    width: 7.5rem;
+    height: 1.8rem;
+    background: #000000;
+    border-radius: 6.25rem;
+    top: 1.8rem;
+    right: 3.125rem;
+    animation: move-cloud2 12s linear infinite;
+  }
+  
+
+  .cloud3 {
+    position: absolute;
+    width: 7.5rem;
+    height: 1.8rem;
+    background: #000000;
+    border-radius: 6.25rem;
+    top: 7.8rem;
+    left: -3.125rem;
+    animation: move-cloud3 15s linear infinite;
+  }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+    position: absolute;
+    background: #000000;
+    border-radius: 50%; 
+    }
+
+
+.circle1 {
+    width: 2.38rem;
+    height: 3.125rem;
+    top: -0.625rem;
+    left: 0.94rem;
+  }
+  
+  .circle2 {
+    width: 2.9rem;
+    height: 4.1rem;
+    top: -1.25rem;
+    left:2.2rem;
+  }
+  
+  .circle3 {
+    width: 2.69rem;
+    height: 3.5rem;
+    top: -0.94rem;
+    left:4.1rem;
+  }
+  
+
+  
+  /* infinite moving cloud trick using 0% and 100% inspired by Mark Bowley, credits to: https://codepen.io/Mark_Bowley/pen/LYZEBq */
+  
+  @keyframes move-cloud1 {
+    0% {
+      transform: translateX(400%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes move-cloud2 {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  
+  @keyframes move-cloud3 {
+    0% {
+      transform: translateX(450%) ; 
+    }
+    100% {
+      transform: translateX(-100%) ; 
+    }
+  }
+  
+
+  
+@media (max-width: 37.5rem) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .animate-sec {
+    grid-column: 1/2;
+    margin-top: 2rem;
+  }
+}

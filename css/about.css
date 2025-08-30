@@ -1,0 +1,145 @@
+
+.about{
+    background-color: #000000;
+    color: white;
+}
+
+.about-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+.potrait-container {
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+
+
+.potrait-img{
+    width: 24.625rem;
+   height: 32.78rem;
+   border-top-left-radius: 0.5rem;
+   border-top-right-radius: 0.5rem;
+   margin-right: 1rem;
+
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10rem;
+}
+
+.desc-ct {
+    max-width: 24rem;
+    margin-left: 4rem;
+}
+
+.short-desc p{
+    font-size: 5rem;
+}
+
+.long-desc p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
+
+}
+
+
+
+.view-project-link {
+    padding: 0.75rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 1.5rem;
+    max-width: 20rem;
+  }
+  
+  .view-project-link:hover, .view-project-link:focus{
+    background-color: var(--light-green);
+  }
+
+
+
+  @media (max-width: 75rem) {
+    .potrait-container {
+        display: flex;  
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:center;
+    
+    }    
+
+
+  }
+  
+  @media (max-width: 56.25rem) {
+     .about-grid{
+        grid-template-columns: 1fr;
+     }
+     .self-intro{
+        order: -1;
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+     }
+     
+     .desc-ct {
+        margin-left: 0rem;
+    }
+
+    .view-project-link{
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+  }
+  
+  @media (max-width: 37.5rem) {
+    .desc-ct {
+        max-width: 12rem;
+        margin-left: 0rem;
+    }
+    .short-desc p{
+        font-size: 2.5rem;
+    }
+    
+    .long-desc p {
+        font-size: 0.8rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 2rem;
+    
+    }
+    .potrait-img{
+       width: 12.5rem;
+       height: auto;
+      
+    }
+
+   
+    
+  }
+  
+
+
+
+
