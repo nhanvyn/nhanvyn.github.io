@@ -40,6 +40,19 @@ body {
 .project-sec-container {
     max-width: 70rem;
 }
+.project-sec-ti{
+    margin-bottom: 2rem;
+}
+
+.project-sec-ti h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    
+}
+
+
+
 
 
 header {

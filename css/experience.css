@@ -1,0 +1,146 @@
+:root {
+  --gap: 1.25rem;
+  --pad-x-lg: 5rem;
+  --pad-x-sm: 2.5rem;
+  --item-pad: 1rem;
+  --radius-full: 9999px;
+  --radius-lg: 0.8rem;
+  --bg-form: #F2F4DE;
+  --bg-microchip: #F0E1E1;
+  --gray-700: #374151;
+  --gray-500: #6b7280;
+   --transition: 300ms ease;
+}
+
+
+#experience {
+  margin-top: 74px;
+  padding-left: var(--pad-x-sm);
+  padding-right: var(--pad-x-sm);
+}
+
+@media (min-width: 1024px) {
+  #experience {
+    padding-left: var(--pad-x-lg);
+    padding-right: var(--pad-x-lg);
+  }
+}
+
+#experience h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.workplace {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin-top: 20px;
+}
+
+/* Card wrapper */
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding: var(--item-pad);
+  border-radius: var(--radius-lg);
+}
+
+.experience.expanded {
+  border-radius: var(--radius-lg);
+}
+
+.bg-form { background: var(--bg-form); }
+.bg-microchip { background: var(--bg-microchip); }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 0.75rem;
+}
+
+.left {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.company {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.position {
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.period-mobile {
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.period-desktop {
+  display: none;
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .left { justify-content: flex-start; }
+  .right {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    margin-right: 1.25rem;
+  }
+  .period-mobile { display: none; }
+  .period-desktop { display: block; }
+}
+
+/* Chevron */
+.chevron {
+  width: 20px;
+  height: 20px;
+  transition: transform var(--transition);
+
+}
+@media (min-width: 768px) {
+  .chevron { width: 24px; height: 24px; }
+}
+.chevron.rotated { transform: rotate(180deg); }
+
+
+.bullets {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+.bullets li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.25rem 0;
+}
