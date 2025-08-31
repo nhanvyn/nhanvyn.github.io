@@ -36,3 +36,23 @@
     justify-content: center;
 }
 
+.edu-img-ct img {
+    width: 380px;
+    max-width: 100%;      /* if the parent container is narrower than 380px then the image will shrink to fit */
+   
+    object-fit: contain;  /* optional: fits image without stretching */
+}
+
+@media (max-width: 37.5rem) {
+    .edu-ct {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .edu-img-ct{
+        display: flex;
+        justify-content: start;
+    }
+
+}
