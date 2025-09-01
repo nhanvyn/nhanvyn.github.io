@@ -43,6 +43,8 @@
     object-fit: contain;  /* optional: fits image without stretching */
 }
 
+
+
 @media (max-width: 37.5rem) {
     .edu-ct {
         display: grid;
@@ -54,5 +56,15 @@
         display: flex;
         justify-content: start;
     }
+
+    .edu-ti p {
+        font-size:  1rem;
+        font-weight: 500;
+    }
+
+    .edu-year p {
+        font-size: 0.8rem;
+    }
+
 
 }

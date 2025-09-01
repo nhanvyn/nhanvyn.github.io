@@ -57,7 +57,7 @@
 
 
 
-.view-project-link {
+.view-resume-link {
     padding: 0.75rem 1.5rem;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -73,7 +73,7 @@
     max-width: 20rem;
   }
   
-  .view-project-link:hover, .view-project-link:focus{
+  .view-resume-link:hover, .view-resume-link:focus{
     background-color: var(--light-green);
   }
 
@@ -108,7 +108,7 @@
         margin-left: 0rem;
     }
 
-    .view-project-link{
+    .view-resume-link{
         font-size: 1.2rem;
         display: inline-block;
     }
@@ -116,7 +116,8 @@
   
   @media (max-width: 37.5rem) {
     .desc-ct {
-        max-width: 12rem;
+        /* max-width: 12rem; */
+        max-width: 80%;
         margin-left: 0rem;
     }
     .short-desc p{
@@ -130,10 +131,15 @@
     
     }
     .potrait-img{
-       width: 12.5rem;
+       width: 80%;
        height: auto;
       
     }
+
+    .about-grid{
+        margin-top: 5rem;
+}
+
 
    
     

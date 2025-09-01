@@ -97,6 +97,15 @@ figcaption{
     margin-top: 0.2rem;
 }
 
+.project-bullet-list{
+    margin-left: 1.5rem;
+}
+
+
+.long-text a {
+  color: black;           /* default color */
+
+}
 
 
 @media (max-width: 56.25rem) {
