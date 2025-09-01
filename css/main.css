@@ -122,17 +122,6 @@ nav {
     border-radius: 0.5rem;
 }
 
-
-@media (max-width:37.5rem) {
-    nav {
-        flex-direction: column;
-    } 
-
-    .header-container {
-        flex-direction: column;
-    }
-  }
-
 .nav-button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -149,6 +138,26 @@ nav {
     background-color: #647b5d;
     color: white;
 }
+
+
+@media (max-width:37.5rem) {
+    nav {
+        flex-direction: column;
+        margin-top: 1rem;
+    } 
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-button {
+    font-size: 0.9rem; 
+    margin: 1rem;
+}
+  
+}
+
+
 
 /* end of reused setup codes from my P2 project */
 
